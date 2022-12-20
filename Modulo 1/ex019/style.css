@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* em HTML é ID= em css #
+em HTML ''class'' = em css .
+
+em HTML ID vem sobrepoem sobre o CLASS, ou seja, Vem primeiro.
+*/
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(123, 180, 38);
+}
+
+#principal{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+h2{
+    color: blueviolet;
+}
+.basico{
+    color: black;
+}
+.intermediario {
+    color: red;
+
+}
+.avancado{ 
+    color: blueviolet;
+
+}
+.destaque {
+    background-color: #a3a345;
+}

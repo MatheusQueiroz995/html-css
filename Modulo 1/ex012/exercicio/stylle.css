@@ -1,0 +1,41 @@
+
+section {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        max-width: 1px;
+        margin:  0 500px 0 500px;
+    
+    }
+
+h1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+}
+button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px 700px 0 700px;
+        background-color: gray;
+
+
+
+}
+
+#video1, #video2, #video3, #video4 {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 550px 0 550px;
+
+}
+
+
+
+
+
+
