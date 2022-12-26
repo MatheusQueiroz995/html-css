@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .pop {
+            width: 50pxpx;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        Table
+        CAPTION = antes da cabeça usa LEGENDA 
+            thead 
+                tr,td,th   
+            tbody
+                tr,td,th
+            tfoot
+                tr,td,th
+                SEMPRE QUE FOR DADOS USE ''TD'''
+                SEMPRE QUE FOR UM TITULO USE 'TH'
+                    USAR SCOPE="COL" QUANDO TIVER UM TITULO EM COLUNA
+                    USAR SCOPE"ROW" QUANDO TIVER UM TITULO COM DADO NA MESMA LINHA
+
+            -->
+        <table>
+            <caption>Populaçao das unidades </caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th class="pop">Populaçao</th>
+                    <th>Total %</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sao Paulo</td>
+                    <td class="num">45,919,049</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">60,609,094</td>
+                    <td>39%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">13,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">12,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">11,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">9,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">8,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">7,485,424</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">6,485,424</td>
+                    <td>28%</td>
+                </tr>
+                 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="num"><strong>424.434.11</strong></td>
+                    <td>11442%</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+
+
+</body>
+</html>
