@@ -12,6 +12,7 @@
         table {
             border-collapse: collapse;
             width: 500px;
+            position: relative;
 
         }
         td, th {
@@ -21,6 +22,11 @@
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+        thead > tr > th {
+            background-color: grey;
+            position: sticky;
+            top: -1px;
         }
         .num {
             text-align: right;
@@ -34,12 +40,22 @@
         .pop {
             width: 50pxpx;
         }
+        tbody >tr:nth-child(2n) {
+            background-color: lightgray;
+        }
         
     </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
-    <!--Anatomia para tabelas grandes
+
+    <!--
+        nth-child(2n) = modo zebrado (2n sign primeiro item branco segundo item com cor) pode ser usado da seguinte forma
+
+        nth-child(odd) <-- odd' impar' começa do numero impa(ou seja, do primeiro item) ou
+        nth-child(even) significa PAR começa do segundo item
+
+        Anatomia para tabelas grandes
         Table
         CAPTION = antes da cabeça usa LEGENDA 
             thead 
@@ -52,6 +68,8 @@
                 SEMPRE QUE FOR UM TITULO USE 'TH'
                     USAR SCOPE="COL" QUANDO TIVER UM TITULO EM COLUNA
                     USAR SCOPE"ROW" QUANDO TIVER UM TITULO COM DADO NA MESMA LINHA
+
+
 
             -->
         <table>
@@ -126,6 +144,15 @@
             </tfoot>
         </table>
 
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime ducimus tempore autem, aperiam vel id quis minus laborum commodi iste provident voluptatem architecto iusto dolor? Harum nesciunt quo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quo laudantium dolore labore ea ullam facere similique perspiciatis saepe explicabo nobis officia nisi, modi quia corporis fuga aliquid optio in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sed, atque aspernatur, magnam, quas culpa ex corrupti repellat doloremque autem harum voluptatem impedit praesentium quidem cupiditate perferendis blanditiis accusamus iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta vero maiores quod recusandae ducimus dolorem iusto aut reprehenderit ipsum illum vitae sapiente voluptatem, placeat, hic voluptatum? Rerum, voluptate illo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia facere laudantium voluptatibus expedita quis ea, tenetur rem eos unde error non amet. Delectus saepe obcaecati qui exercitationem minus atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi aspernatur facere ab ipsam fugiat fuga magni? Harum sapiente, maiores reprehenderit veritatis accusamus iure ut officia distinctio architecto eligendi explicabo.</p>
 
 
 
