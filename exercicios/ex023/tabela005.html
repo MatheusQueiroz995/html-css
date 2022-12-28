@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 7px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque {
+            background-color: lightgoldenrodyellow;
+        }
+        .cnome {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+        <h1>Exercicio de Tabela</h1>
+
+        <Table>
+              <!-- se quiser colocar duas uma cor para duas coluna, apagar a coluna e em uma desejada colula acrescentar class="cgrupo" span="2" o numero dentro do span siginifica quantas colunas iram ficar de diferente cor 2 = as duas colunas e assim por diante
+            <col class="cgrup" span="2"> <<<<-- exemplo  
+        -->
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profição</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ana </td>
+                <td>F</td>
+                <td>29</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Rosa</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Estagiário</td>
+            </tr>
+            <tr>
+                <td>Roberto</td>
+                <td>M</td>
+                <td>44</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Nutricionista</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>F</td>
+                <td>20</td>
+                <td>Programadora</td>
+            </tr>
+
+
+
+
+
+        </Table>
+
+        
+</body>
+</html>
