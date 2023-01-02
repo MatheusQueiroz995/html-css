@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <!-- usar method dentro de form, esconde os dados da url do nome, sobrenome. method "get" se usa quando nao pede dado sensivel como'' nome, peso, sobrenome etc'' method"post" usa quando tem dados importantes como senha, envio de arquivos etc-->
+    <form action="cadastrp.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome " id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+
+</body>
+</html>
