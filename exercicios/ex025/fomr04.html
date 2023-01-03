@@ -9,19 +9,28 @@
 <body>
     <h1>Exemplo de Form</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">E-email</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-        </p>
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel"  autocomplete="tel" pattern="^[0-9]{4}--[0-9]{4}" required>
-        </p>
-        <!-- Estudar mais sobre RegEx-->
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" autocomplete="off" minlength="5" maxlength="20"
+                required>
+            </p>
+            <p>
+                <label for="iemail">E-email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel"  autocomplete="tel" pattern="^\(\d{2}\)\d[4,5]-\d${4}" required placeholder="(xx)xxxx-xxxx" required>
+            </p>
+            <!-- Estudar mais sobre RegEx-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
 
     </form>   
 
